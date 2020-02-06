@@ -64,16 +64,19 @@ function total() {
 
 function removeFromCart(item) {
   var string;
+  var itemInCart = false;
   for(let i = 0; i<cart.length; i++){
     if(cart[i].itemName === item){
       cart.splice(i,1);
+      itemInCart = true;
     }
-    else if(cart[i].itemName !== item) {
-      return "That item is not in your cart."
+  }
+  if(itemInCart === false){
+    return "That item is not in your cart."
   }
   return cart
 } 
-}
+
 
 function placeOrder(cardNumber) {
   // write your code here
