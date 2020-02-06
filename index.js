@@ -41,6 +41,7 @@ function viewCart() {
     item_price = cart[i].itemPrice;
     string = string + `, ${item_name} at $${item_price}`
   }
+  
   item_name = cart[cart.length-1].itemName;
   item_price = cart[cart.length-1].itemPrice;
   string = string + `, and ${item_name} at $${item_price}.`
