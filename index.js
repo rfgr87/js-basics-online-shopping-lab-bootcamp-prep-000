@@ -30,13 +30,13 @@ function viewCart() {
   }
   else{
    
-    string = `In your cart, you have ${item_name} at ${item_price}`
+    string = `In your cart, you have ${item_name} at $${item_price}`
     
   for(i=1; i<cart.length - 1; i++){
     item_object = cart[i];
     item_name = item_object.itemName;
     item_price = item_price.itemPrice;
-    string = string + `, ${item_name} at ${item_price}`
+    string = string + `, ${item_name} at $${item_price}`
   }
   item_object = cart[i+1];
   item_name = item_object.itemName;
