@@ -55,7 +55,7 @@ function viewCart() {
   //console.log(viewCart())
   
 function total() {
-  var total;
+  var total = 0;
   for(let i=0; i<cart.length; i++){
     total = total + parseInt(cart[i].itemPrice);
   }
