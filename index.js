@@ -14,7 +14,7 @@ function addToCart(item) {
   object = {};
   object = {itemName: item, price: price};
   cart.push(object)
-  return `<${itemvar}> has been added to your cart.`
+  return `${item} has been added to your cart.`
 }
 
 function viewCart() {
