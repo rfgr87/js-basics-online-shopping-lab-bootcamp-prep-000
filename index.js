@@ -46,6 +46,7 @@ function viewCart() {
   return string
 }
   
+  console.log(viewCart())
   
 function total() {
   // write your code here
