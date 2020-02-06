@@ -63,14 +63,15 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var string;
   for(let i = 0; i<cart.length; i++){
     if(cart[i].itemName === item){
       cart[i].splice(i,1);
-      return cart;
     }
-    else{
+    else if(cart[i].itemName === item) {
       return "That item is not in your cart."
   }
+  return 
 } 
 }
 
