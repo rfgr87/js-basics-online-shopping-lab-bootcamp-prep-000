@@ -29,6 +29,9 @@ function viewCart() {
     string = `In your cart, you have ${item_name} at $${item_price}.`
   }
   else{
+    item_object = cart[0];
+    item_name = item_object.itemName
+    item_price = item_object.itemPrice;
    
     string = `In your cart, you have ${item_name} at $${item_price}`
     
