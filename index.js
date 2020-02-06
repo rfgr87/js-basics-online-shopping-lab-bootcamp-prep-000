@@ -45,8 +45,9 @@ function viewCart() {
   }
   return string
 }
-  addToCart("bananas")
-  console.log(viewCart())
+  
+  //addToCart("bananas")
+  //console.log(viewCart())
   
 function total() {
   // write your code here
