@@ -25,9 +25,10 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   else if(cart.length === 1){
-    item_name = cart[0].itemName
+    item_name = cart[0].itemName;
     item_price = cart[0].itemPrice;
-    string = `In your cart, you have ${item_name} at $${item_price}.`
+    string = `In your cart, you have ${item_name} at $${item_price}.`;
+    return string;
   }
   else{
     item_name = cart[0].itemName
@@ -36,17 +37,16 @@ function viewCart() {
     string = `In your cart, you have ${item_name} at $${item_price}`
     
   for(i=1; i<cart.length - 1; i++){
-    item_object = cart[i];
-    item_name = item_object.itemName;
-    item_price = item_price.itemPrice;
+    item_name = cart[i].itemName;
+    item_price = cart[i].itemPrice;
     string = string + `, ${item_name} at $${item_price}`
   }
-  item_object = cart[i+1];
-  item_name = item_object.itemName;
-  item_price = item_price.itemPrice;
+  item_name = cart[cart.length-1].itemName;
+  item_price = cart[cart.length-1].itemPrice;
   string = string + `, and ${item_name} at $${item_price}.`
-  }
   return string
+    
+  }
 }
   
   //addToCart("bananas")
